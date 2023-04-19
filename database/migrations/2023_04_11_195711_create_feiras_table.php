@@ -15,9 +15,8 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string("title");
-            $table->date("date");
             $table->string("city");
-            $table->boolean("private");
+            $table->string("segmento");
         });
     }
 

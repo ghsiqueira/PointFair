@@ -16,6 +16,20 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
 Route::get('/feiras/create', [EventController::class, 'create']);
-// Route::get('/aboutus', [EventController::class, 'index']);
-// Route::get('/duvidasFrequentes', [EventController::class, 'index']);
-// Route::get('/contact', [EventController::class, 'index']);
+Route::get('/feiras/{id}', [EventController::class, 'show']);
+Route::post('/feiras', [EventController::class, 'store']);
+
+Route::get('/sobrenos', function () { return view('aboutus'); })->name('aboutus');
+Route::get('/duvidasFrequentes', function () { return view('duvidasFrequentes'); })->name('duvidasFrequentes');
+Route::get('/contato', function () { return view('contact'); })->name('contact');
+Route::get('/home', function () { return view('inicio'); })->name('inicio');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

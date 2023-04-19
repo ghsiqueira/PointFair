@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Feira extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'items' => 'array'
+    ];
+
+    protected $dates = ['date'];
 }
