@@ -558,11 +558,11 @@ max-width: 1000px;
 margin: 0 auto;
 }
 
-.sobre-nos h2 {
-color: #333;
-font-size: 22px;
-font-weight: bold;
-margin-bottom: 20px;
+.container {
+    max-width: 1200px; /* define a largura máxima do container para 1200px */
+    margin: 0 auto; /* centraliza o container na página */
+    padding-left: 0px; /* adiciona 20px de margem esquerda */
+    padding-right: 0px; /* adiciona 20px de margem direita */
 }
 
 .linha-vertical {
@@ -590,26 +590,15 @@ justify-content: center;
 align-items: center;
 }
 
+.col-md-4 {
+margin-bottom: 20px; /* adiciona 20px de margem inferior */
+text-align: center;
+padding-left: 50px;
+margin-top: 5px;
+}
+
 .list-unstyled li a {
-    color: var(--black);
-}
-
-.contate-nos h2 {
-color: #333;
-font-size: 22px;
-font-weight: bold;
-margin-bottom: 20px;
-}
-
-.linha-vertical2 {
-height: 60px;
-width: 1px;
-background-color: #333;
-margin: 0 auto;
-}
-
-.contate-nos p {
-color: #666;
-font-size: 16px;
-line-height: 1.6;
+color: var(--black);
+padding: 5px 0; /* adiciona 5px de preenchimento no topo e na parte inferior */
+margin-top: 10px;
 }

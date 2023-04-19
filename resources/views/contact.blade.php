@@ -39,6 +39,7 @@
             </ul>
         </div>
     @endif
+
 </section>
 
 @endsection
