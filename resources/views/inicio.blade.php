@@ -3,7 +3,6 @@
 @section('title', 'Point Fair')
 
 @section('content')
-
 <div class="mainIndex">
     <div class="ScreenMain">
         <div class="TextInfo">
@@ -25,5 +24,4 @@
     </div>
 </div>
 <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
-
 @endsection
