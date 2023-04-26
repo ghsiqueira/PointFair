@@ -65,4 +65,11 @@ class EventController extends Controller
         return view('feiras.show', ['feira' => $feiras]);
         
     }
+
+    public function destroy($id) {
+        
+        Feira::findOrFail($id)->delete();
+
+        return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!');
+    }
 }

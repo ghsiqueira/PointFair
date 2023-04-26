@@ -27,16 +27,36 @@
                         <a class="navbar-brand" href="/home">PointFair</a>
                     </div>
                     <ul class="navbar-nav navbar-right">
+                    @guest
+                        <li class="nav-item">
+                            <a href="/login" class="nav-link">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/register" class="nav-link">Cadastrar</a>
+                        </li>
+                    @endguest
                         <li class="nav-item">
                             <a href="/home" class="nav-link">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Feiras</a>
+                            <a href="/dashboard" class="nav-link">Feirantes</a>
                         </li>
-                        @auth
                         <li class="nav-item">
-                        <a href="/feiras/create" class="nav-link">Adicionar Feira</a>
+                            <a href="/sobrenos" class="nav-link">Sobre Nós</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="/contato" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/duvidasFrequentes" class="nav-link">Dúvidas Frequentes</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="/" class="nav-link">Feiras</a>
+                        </li> -->
+                        @auth
+                        <!-- <li class="nav-item">
+                        <a href="/feiras/create" class="nav-link">Adicionar Feira</a>
+                        </li> -->
                         <li class="nav-item">
                             <form action="/logout" method="POST">
                             @csrf
@@ -44,15 +64,7 @@
                             </form>
                         </li>
                         @endauth
-                        @guest
-                        <li class="nav-item">
-                            <a href="/login" class="nav-link">Entrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/register" class="nav-link">Cadastrar</a>
-                        </li>
-                        @endguest
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownOpcoes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Mais Opções
                             </a>
@@ -61,7 +73,7 @@
                             <a class="dropdown-item" href="/contato">Contato</a>
                             <a class="dropdown-item" href="/duvidasFrequentes">Dúvidas Frequentes</a>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
@@ -115,4 +127,3 @@
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
     </body>
 </html>
-

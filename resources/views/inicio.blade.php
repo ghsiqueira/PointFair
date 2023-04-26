@@ -4,6 +4,14 @@
 
 @section('content')
 <div class="mainIndex">
+    <div class="buttons-login-cadastro">
+        <a href="/login">
+            <button class="btn btn-primary">Login</button>
+        </a>
+        <a href="/register">
+            <button class="btn btn-secondary">Cadastro</button>
+        </a>
+    </div>
     <div class="ScreenMain">
         <div class="TextInfo">
             <h1 class="mainPointFair">Point Fair</h1>
@@ -13,9 +21,9 @@
                 <a href="">
                     <button class="btn btn-primary">Baixar App</button>
                 </a>
-                <a href="/sobrenos" class="saiba-mais">Saiba mais
+                <!-- <a href="/sobrenos" class="saiba-mais">Saiba mais
                     <span class="iconify" data-icon="eva:arrow-ios-forward-fill" data-height="22"></span>
-                </a>
+                </a> -->
             </div>
         </div>
         <div class="ImgHome">
@@ -23,5 +31,6 @@
         </div>
     </div>
 </div>
+
 <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
 @endsection
