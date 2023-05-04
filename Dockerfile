@@ -1,39 +1,56 @@
-FROM php:8.0-fpm-alpine
+FROM php:8-fpm-alpine
 
-RUN apk add --no-cache \
-    php8 \
-    php8-dom \
-    php8-xml \
-    php8-simplexml \
-    php8-xmlwriter \
-    php8-tokenizer \
-    php8-mbstring \
-    php8-ctype \
-    php8-json \
-    php8-pdo \
-    php8-pdo_mysql \
-    php8-phar \
-    php8-zip \
-    php8-curl \
-    php8-opcache \
-    php8-gd \
-    php8-openssl \
-    php8-session \
-    php8-fileinfo \
-    php8-iconv \
-    curl \
-    unzip \
-    git \
-    bash
+# instala as dependências necessárias
+RUN apk add --no-cache --virtual .build-deps \
+        $PHPIZE_DEPS \
+        icu-dev \
+        libzip-dev \
+        zlib-dev \
+        libpng-dev \
+        libjpeg-turbo-dev \
+        freetype-dev && \
+    apk add --no-cache \
+        bash \
+        git \
+        icu \
+        libzip \
+        zlib \
+        libpng \
+        libjpeg-turbo \
+        freetype \
+        nginx && \
+    docker-php-ext-install \
+        pdo_mysql \
+        intl \
+        zip \
+        exif \
+        pcntl && \
+    docker-php-ext-configure gd --with-freetype --with-jpeg && \
+    docker-php-ext-install gd && \
+    pecl install \
+        xdebug \
+        apcu && \
+    docker-php-ext-enable \
+        xdebug \
+        apcu
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
+# define o diretório de trabalho
 WORKDIR /var/www
 
-COPY . .
+# copia os arquivos do Laravel para o contêiner
+COPY . /var/www
 
-RUN composer install --no-dev
+# ajusta as permissões
+RUN chown -R www-data:www-data /var/www \
+    && chmod -R 755 /var/www/storage \
+    && chmod -R 755 /var/www/bootstrap/cache
 
-RUN php artisan key:generate --force
+# define a configuração do Nginx
+COPY deploy/nginx.conf /etc/nginx/nginx.conf
+COPY deploy/nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 
-CMD php-fpm
+# expõe a porta do Nginx
+EXPOSE 8080
+
+# inicia o Nginx e o PHP-FPM
+CMD nginx && php-fpm
