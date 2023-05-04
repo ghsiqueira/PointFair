@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: app
+    env: .env
+    plan: starter
+    region: aws-us-east-1
+    github:
+      branch: main
+    build:
+      image: render-example-app
+    start_command: docker-compose up
+    envs:
+      - key: APP_KEY
+        generator: secret
