@@ -2,5 +2,5 @@ services:
   - name: node-app
     type: web
     runtime: node
-    buildCommand: npm install && composer install && npm run build
-    startCommand: npm start
+    buildCommand: npm install && npm run build
+    startCommand: npm run dev
