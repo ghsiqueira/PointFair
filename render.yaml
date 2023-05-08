@@ -1,6 +1,6 @@
 services:
-  - name: laravel
+  - name: node-app
     type: web
-    buildCommand: php artisan --no-interaction --env=production
-    startCommand: php -S 0.0.0.0:$PORT -t public
-    runtime: php
+    runtime: node
+    buildCommand: npm install && composer install && npm run build
+    startCommand: npm start
