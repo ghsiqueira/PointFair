@@ -25,7 +25,7 @@ RUN a2enmod rewrite
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Instalar as dependências do PHP com o Composer
-RUN composer install --no-scripts --no-autoloader
+RUN composer install
 
 # Executar os scripts de inicialização do Laravel
 RUN composer dump-autoload
