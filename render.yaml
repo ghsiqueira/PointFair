@@ -3,4 +3,4 @@ services:
     type: web
     buildCommand: php artisan --no-interaction --env=production
     startCommand: php -S 0.0.0.0:$PORT -t public
-    runtime: web
+    runtime: php
