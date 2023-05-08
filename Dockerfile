@@ -1,5 +1,5 @@
 # Use a imagem base do PHP
-FROM php:7.4-apache
+FROM php:8-apache
 
 # Copie os arquivos do projeto para o diretório de trabalho do contêiner
 COPY . /var/www/html
