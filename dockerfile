@@ -1,8 +1,8 @@
 # Use the official PHP image as the base image
-FROM php:8.1-apache
+FROM php:8.1-cli
 
 # Set the working directory
-WORKDIR /var/www/html
+WORKDIR /app
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \
@@ -15,9 +15,6 @@ RUN apt-get update && apt-get install -y \
 
 # Install PHP extensions
 RUN docker-php-ext-install zip pdo_mysql mbstring exif pcntl bcmath gd
-
-# Enable Apache mod_rewrite
-RUN a2enmod rewrite
 
 # Copy the composer.json and composer.lock files
 COPY composer.json composer.lock ./
@@ -32,11 +29,8 @@ COPY . .
 # Generate the optimized autoloader
 RUN composer dump-autoload --optimize
 
-# Set the file permissions
-RUN chown -R www-data:www-data storage
+# Expose port 8000 (change this to the appropriate port for your application)
+EXPOSE 8000
 
-# Expose port 80
-EXPOSE 80
-
-# Start the Apache server
-CMD ["apache2-foreground"]
+# Start the PHP built-in web server
+CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
