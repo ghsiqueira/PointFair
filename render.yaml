@@ -1,6 +1,10 @@
 services:
   - name: laravel-app
     type: web
-    runtime: node
-    buildCommand: composer install
-    startCommand: php /path/to/your/public/index.php
+    env:
+      - key: APP_KEY
+        value: base64:Dv1+sJ+FiPOoBT0hD5eCv5ipjcYuLSb1lslCpW2Qj5c=
+      - key: APP_ENV
+        value: production
+    buildCommand: composer install --no-dev --optimize-autoloader
+    startCommand: php C:\Users\conta\Documents\laravel\tcc\PointFair\public\index.php
