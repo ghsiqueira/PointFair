@@ -29,8 +29,8 @@ COPY . .
 # Generate the optimized autoloader
 RUN composer dump-autoload --optimize
 
-# Expose port 8000 (change this to the appropriate port for your application)
-EXPOSE 8000
+# Expose port 8080 (Render default port for containerized applications)
+EXPOSE 8080
 
-# Start the PHP built-in web server
-CMD ["php", "-S", "0.0.0.0:8000", "-t", "public"]
+# Define the entrypoint command to run your web service (replace "app.php" with your application's entry file)
+CMD ["php", "app.php"]
