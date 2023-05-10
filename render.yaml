@@ -1,0 +1,26 @@
+# render.yaml
+build:
+  - name: Composer Install
+    command: composer install
+
+  - name: NPM Install
+    command: npm install
+
+  - name: NPM Build
+    command: npm run build
+
+run:
+  - name: Optimize
+    command: php artisan optimize
+
+  - name: Config Cache
+    command: php artisan config:cache
+
+  - name: Route Cache
+    command: php artisan route:cache
+
+  - name: View Cache
+    command: php artisan view:cache
+
+  - name: Migrate
+    command: php artisan migrate --force
