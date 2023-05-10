@@ -24,3 +24,4 @@ run:
 
   - name: Migrate
     command: php artisan migrate --force
+    
