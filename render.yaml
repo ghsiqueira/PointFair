@@ -24,4 +24,7 @@ run:
 
   - name: Migrate
     command: php artisan migrate --force
+<<<<<<< HEAD
     
+=======
+>>>>>>> b69bf6c4df6b882c4abb4705a56a7be11c577cda
