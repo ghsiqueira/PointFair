@@ -15,9 +15,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
         <!-- CSS e JS da aplicação -->
-        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/styles.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="rel">
-        
     </head>
     <body>
         <header>
@@ -25,7 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <div class="navbar-header d-flex justify-content-center">
                         <a href="/">
-                            <img src="{{ asset('img\logo.png') }}" class="imgHeader" alt="Logo">
+                            <img src="{{ secure_asset('img\logo.png') }}" class="imgHeader" alt="Logo">
                         </a>
                         <a class="navbar-brand" href="/">PointFair</a>
                     </div>
