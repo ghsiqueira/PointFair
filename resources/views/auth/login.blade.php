@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="{{ secure_asset('public\build\assets\app-96afdf9a.css') }}">
 </head>
 <body>
     <x-guest-layout>
@@ -55,5 +56,6 @@
             </form>
         </x-authentication-card>
     </x-guest-layout>
+    <script src="public\build\assets\app-b9a1a811.js"></script>
 </body>
 </html>
