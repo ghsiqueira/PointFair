@@ -23,20 +23,23 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="/home">PointFair</a>
+                    <div class="navbar-header d-flex justify-content-center">
+                        <a href="/">
+                            <img src="{{ asset('img\logo.png') }}" class="imgHeader" alt="Logo">
+                        </a>
+                        <a class="navbar-brand" href="/">PointFair</a>
                     </div>
                     <ul class="navbar-nav navbar-right">
                     @guest
                         <li class="nav-item">
-                            <a href="/login" class="nav-link">Entrar</a>
+                            <a href="/login" class="nav-link btn-primary">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/register" class="nav-link">Cadastrar</a>
+                            <a href="/register" class="nav-link btn-secondary">Cadastrar</a>
                         </li>
                     @endguest
                         <li class="nav-item">
-                            <a href="/home" class="nav-link">Início</a>
+                            <a href="/" class="nav-link">Início</a>
                         </li>
                         <li class="nav-item">
                             <a href="/dashboard" class="nav-link">Feirantes</a>
@@ -50,13 +53,7 @@
                         <li class="nav-item">
                             <a href="/duvidasFrequentes" class="nav-link">Dúvidas Frequentes</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a href="/" class="nav-link">Feiras</a>
-                        </li> -->
                         @auth
-                        <!-- <li class="nav-item">
-                        <a href="/feiras/create" class="nav-link">Adicionar Feira</a>
-                        </li> -->
                         <li class="nav-item">
                             <form action="/logout" method="POST">
                             @csrf
@@ -64,16 +61,6 @@
                             </form>
                         </li>
                         @endauth
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownOpcoes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Mais Opções
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownOpcoes">
-                            <a class="dropdown-item" href="/sobrenos">Sobre Nós</a>
-                            <a class="dropdown-item" href="/contato">Contato</a>
-                            <a class="dropdown-item" href="/duvidasFrequentes">Dúvidas Frequentes</a>
-                            </div>
-                        </li> -->
                     </ul>
                 </div>
             </nav>

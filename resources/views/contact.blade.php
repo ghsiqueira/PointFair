@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="titulo-contato">
-   <h1>Contato</h1>
+   <h1 class="h1-contato">Contato</h1>
 </div>
 <section class="forms">
     <form id="contact-form">

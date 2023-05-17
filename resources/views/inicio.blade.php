@@ -4,17 +4,9 @@
 
 @section('content')
 <div class="mainIndex">
-    <div class="buttons-login-cadastro">
-        <a href="/login">
-            <button class="btn btn-primary">Login</button>
-        </a>
-        <a href="/register">
-            <button class="btn btn-secondary">Cadastro</button>
-        </a>
-    </div>
     <div class="ScreenMain">
         <div class="TextInfo">
-            <h1 class="mainPointFair">Point Fair</h1>
+            <h1 class="mainPointFair">PointFair</h1>
             <h2>Compre consciente, valorize o autônomo: <br> Juntos por um comércio justo e diverso!</h2>
             <p>O Point Fair tem o objetivo de divulgar feirantes.</p>
             <div class="buttons">
@@ -27,7 +19,7 @@
             </div>
         </div>
         <div class="ImgHome">
-            <img src="img/logo.png" alt="">
+            <img src="img/logo.png" alt="Logo">
         </div>
     </div>
 </div>
