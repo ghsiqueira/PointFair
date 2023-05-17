@@ -50,23 +50,23 @@ section{
 
 .btn-primary {
     background-color: #F2A340;
-    border: 2px solid orange;
     border-radius: 8px;
 }
 
 .btn-primary:hover {
     background-color: lightyellow;
+    border: 2px solid orange;
     border-color: #F2A340;
 }
 
 .btn-secondary {
     background-color: #F2A340;
-    border: 2px solid orange;
-    border-radius: 8px;
+    border-radius: 8px 8px;
 }
 
 .btn-secondary:hover {
     background-color: lightyellow;
+    border: 2px solid orange;
     border-color: #F2A340;
 }
 
