@@ -73,15 +73,15 @@
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome..." required>
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
             </div>
             <div class="form-group">
                 <label for="message">Mensagem:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem..." required></textarea>
             </div>
             <button type="submit">Enviar</button>
             </form>
