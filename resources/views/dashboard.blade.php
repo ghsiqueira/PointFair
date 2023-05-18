@@ -74,14 +74,14 @@
           <div class="feeds-container">
             <div class="user-feed">
               <div class="user">
-                <img src="{{ asset('img\feirantes\florista.jpg') }}" alt="Foto de perfil">
+                <img src="{{ secure_asset('img\feirantes\florista.jpg') }}" alt="Foto de perfil">
                 <div class="user-info">
                   <h2>JuliaRosas</h2>
                   <button class="follow-button">Seguir</button>
                 </div>
               </div>
               <div class="user-post">
-                <img src="{{ asset('img\produtos\floricultura.jpg') }}" alt="Foto do post">
+                <img src="{{ secure_asset('img\produtos\floricultura.jpg') }}" alt="Foto do post">
                 <div class="post-info">
                   <h3>Título do Post 1</h3>
                   <p>Embu das Artes - Feira de Flores</p>
@@ -92,14 +92,14 @@
 
             <div class="user-feed">
               <div class="user">
-                <img src="{{ asset('img\feirantes\bibliotecaria.jpg') }}" alt="Foto de perfil">
+                <img src="{{ secure_asset('img\feirantes\bibliotecaria.jpg') }}" alt="Foto de perfil">
                 <div class="user-info">
                   <h2>ClaudiaDosLivros</h2>
                   <button class="follow-button">Seguir</button>
                 </div>
               </div>
               <div class="user-post">
-                <img src="{{ asset('img\produtos\livros.jpg') }}" alt="Foto do post">
+                <img src="{{ secure_asset('img\produtos\livros.jpg') }}" alt="Foto do post">
                 <div class="post-info">
                   <h3>Título do Post 2</h3>
                   <p>Santana - Feira dos Livros</p>
@@ -110,14 +110,14 @@
 
             <div class="user-feed">
               <div class="user">
-                <img src="{{ asset('img\feirantes\artesa.jpg') }}" alt="Foto de perfil">
+                <img src="{{ secure_asset('img\feirantes\artesa.jpg') }}" alt="Foto de perfil">
                 <div class="user-info">
                   <h2>CraftyLeticia</h2>
                   <button class="follow-button">Seguir</button>
                 </div>
               </div>
               <div class="user-post">
-                <img src="{{ asset('img\produtos\artesanato.jpeg') }}" alt="Foto do post">
+                <img src="{{ secure_asset('img\produtos\artesanato.jpeg') }}" alt="Foto do post">
                 <div class="post-info">
                   <h3>Título do Post 3</h3>
                   <p>Taboão da Serra - Feira Lago do Taboão</p>
