@@ -15,7 +15,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ secure_asset('\build\assets\app-96afdf9a.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('public/build/assets/app-96afdf9a.css') }}">
     </head>
     <body class="font-sans antialiased">
         <x-banner />
@@ -40,6 +40,6 @@
 
         @stack('modals')
 
-        @livewireScripts
+        <script src="{{ secure_asset('public/build/assets/app-b9a1a811.js') }}"></script>
     </body>
 </html>
