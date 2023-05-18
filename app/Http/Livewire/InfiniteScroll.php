@@ -4,19 +4,23 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Item;
+use Livewire\WithPagination;
 
 class InfiniteScroll extends Component
 {
-    public $items = [];
+    use WithPagination;
 
     public function loadMore()
     {
-        $newItems = Item::skip(count($this->items))->take(10)->get();
-        $this->items = $this->items->concat($newItems);
+        $this->perPage += 10;
     }
 
     public function render()
     {
-        return view('livewire.infinite-scroll');
+        $items = Item::paginate($this->perPage);
+
+        return view('livewire.infinite-scroll', [
+            'items' => $items
+        ]);
     }
 }
