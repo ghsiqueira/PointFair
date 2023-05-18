@@ -66,7 +66,7 @@
             </nav>
         </header>
         <div class="mainIndex">
-            <div class="ScrenbnMain">
+            <div class="ScreenMain">
                 <div class="TextInfo">
                     <h1 class="mainPointFair">PointFair</h1>
                     <h2>Compre consciente, valorize o autônomo: <br> Juntos por um comércio justo e diverso!</h2>
