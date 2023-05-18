@@ -76,7 +76,7 @@
                 <input type="text" id="name" name="name" placeholder="Digite seu nome..." required>
             </div>
             <div class="form-group">
-                <label for="email">E-mail:</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
             </div>
             <div class="form-group">
