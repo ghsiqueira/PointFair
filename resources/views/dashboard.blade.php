@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="{{ secure_asset('css/feed.css') }}">
         <link rel="stylesheet" href="{{ secure_asset('css/animacoes.css') }}">
         <link rel="stylesheet" href="{{ secure_asset('css/navfooter.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/styles.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="rel">
     </head>
     <body>
