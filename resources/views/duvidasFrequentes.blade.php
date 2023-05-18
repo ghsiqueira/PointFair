@@ -65,9 +65,6 @@
                 </div>
             </nav>
         </header>
-        <div class="titulo-contato">
-            <h1 class="h1-contato">Contato</h1>
-        </div>
         <main class="dvds-frequentes">
           <div class="duvidas-frequentes">
             <h1>Dúvidas Frequentes</h1>
