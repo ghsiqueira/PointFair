@@ -67,7 +67,6 @@
                     @if(session('msg'))
                     <p class="msg">{{ session('msg') }}</p>
                     @endif
-                    @yield('content')
                 </div>
             </div>
         </main>
