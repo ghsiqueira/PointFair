@@ -57,6 +57,7 @@
           <p class="post-date">Publicado em 23 de Abril de 2023</p>
         </div>
       </div>
+      @livewire('infinite-scroll')
     </div>
   </div>
 </div>
