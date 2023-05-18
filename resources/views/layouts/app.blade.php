@@ -12,10 +12,10 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(["{{ secure_asset('\build\assets\app-96afdf9a.css') }}" , '"{{ secure_asset('\build\assets\app-b9a1a811.js') }}"'])
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
-        @livewireStyles
+        <link rel="stylesheet" href="{{ secure_asset('\build\assets\app-96afdf9a.css') }}">
     </head>
     <body class="font-sans antialiased">
         <x-banner />
