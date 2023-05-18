@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <div class="navbar-header d-flex justify-content-center">
                         <a href="/">
-                            <img src="{{ secure_asset('img\logo.png') }}" class="imgHeader" alt="Logo">
+                            <img src="{{ secure_asset('img/logo.png') }}" class="imgHeader" alt="Logo">
                         </a>
                         <a class="navbar-brand" href="/">PointFair</a>
                     </div>
