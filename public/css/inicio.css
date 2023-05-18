@@ -1,0 +1,109 @@
+/* Início */
+.mainIndex {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 89vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ScreenMain {
+    display: flex;
+    align-items: flex-start;
+}
+
+.buttons-login-cadastro {
+    display: flex;
+    margin-right: 130px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-self: flex-end;
+}
+
+.buttons-login-cadastro button {
+    margin-left: 10px;
+}
+
+.TextInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.TextInfo h1 {
+    color: var(--main-color);
+}
+
+.TextInfo h2,
+p {
+    color: var(--secundario);
+}
+
+.mainIndex div h1 {
+    font-size: 64px;
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+.mainIndex div h2 {
+    color: var(--secundario);
+    font-weight: 600;
+    margin-block: 5px;
+}
+
+.mainIndex div p {
+    margin-bottom: 1.5rem;
+    color: var(--secundario);
+    width: 70%;
+}
+
+.mainIndex .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.mainIndex .buttons button {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: var(--main-color);
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.buttons button:hover {
+    border-color: var(--secundario);
+    background-color: var(--white);
+    color: var(--secundario);
+}
+
+.mainIndex .buttons .saiba-mais {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.mainIndex .buttons svg {
+    transition: 0.5s;
+}
+
+.mainIndex .buttons a:hover svg {
+    margin-left: 7px;
+    transform: scale(1.3);
+}
+
+.ImgHome {
+    width: 30vw;
+    margin-left: 45vh;
+}

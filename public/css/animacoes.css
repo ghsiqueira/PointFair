@@ -1,0 +1,47 @@
+/* Animações */
+nav {
+    transition: all 0.2s ease-in-out;
+}
+  
+nav.active {
+    background-color: var(--bg);
+}
+
+nav.active ul {
+    display: block;
+}
+    
+nav.active ul li {
+    margin: 0;
+    padding: 10px;
+}
+    
+.titulo-contato, .duvidas-frequentes {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.TextInfo h1 {
+    animation: fadeInUp 1s ease-in-out;
+}
+    
+@keyframes fadeInUp {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    }
+    
+    @keyframes pulse {
+    from {
+    transform: scale(1);
+    }
+    
+    to {
+    transform: scale(1.1);
+    }
+}

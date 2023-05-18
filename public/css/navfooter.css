@@ -1,0 +1,87 @@
+/* navbar */
+#navbar {
+    justify-content: space-between;
+    background-color: #FFF;
+}
+
+.navbar-brand {
+    padding: 8px 4px;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #FFC15E !important;
+}
+
+.nav-item a {
+    font-size: 1.25rem;
+    color: var(--black) !important;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+#navbar a:hover {
+    color: var(--bg) !important;
+}
+
+.imgHeader {
+    width: 65px;
+    height: 65px;
+}
+
+/* Footer */
+.Rodape {
+    background-color: var(--main-color);
+    padding: 20px 0;
+}
+
+.container-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.linha-vertical {
+    height: 60px;
+    width: 1px;
+    background-color: #333;
+    margin: 0 auto;
+}
+
+.sobre-nos p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.panellinks {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.panellinks .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-4 {
+    margin-bottom: 20px;
+    text-align: center;
+    padding-left: 50px;
+    margin-top: 5px;
+}
+
+.list-unstyled li a {
+    color: var(--black);
+    padding: 5px 0;
+    margin-top: 10px;
+}
