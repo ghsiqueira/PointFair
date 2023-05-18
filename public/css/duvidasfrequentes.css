@@ -4,82 +4,81 @@
     justify-content: center;
     align-items: center;
     height: 88vh;
-    margin-left: 32%;
-  }
+}
   
-  .duvidas-frequentes {
+.duvidas-frequentes {
     text-align: center;
     margin-bottom: 40px;
-  }
+}
   
-  .duvidas-frequentes h1 {
+.duvidas-frequentes h1 {
     color: var(--secundario);
     font-size: 2.5rem;
     margin-bottom: 10px;
-  }
+}
   
-  .duvidas-frequentes p {
+.duvidas-frequentes p {
     color: var(--secundario);
     font-size: 1.2rem;
     margin-top: 0;
-  }
+}
   
-  .Questions {
+.Questions {
     color: var(--black);
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
-  .questionItem {
+.questionItem {
     width: 80%;
     margin-bottom: 20px;
-  }
+}
   
-  .q-and-a {
+.q-and-a {
     margin-bottom: 20px;
     text-align: center;
-  }
+}
   
-  .text-q-and-a {
+.text-q-and-a {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-  }
+}
   
-  .text-q-and-a p {
+.text-q-and-a p {
     margin: 0;
     color: var(--main-color);
     font-weight: 900;
     font-size: 1.1rem;
-  }
+}
   
-  .text-q-and-a i {
+.text-q-and-a i {
     margin-left: 10px;
     font-size: 20px;
-  }
+}
   
-  .answer {
+.answer {
     display: none;
-  }
+}
   
-  .answer p {
+.answer p {
     margin-top: 5px;
-  }
+}
   
-  .showOff {
+.showOff {
     display: none;
-  }
+}
   
-  .show {
+.show {
     display: block;
-  }
+}
   
-  .link-form a {
+.link-form a {
     color: var(--black);
     text-decoration: underline;
-  }
+}
   
-  .link-form a:hover {
+.link-form a:hover {
     text-decoration: none;
-  }  
+}  
