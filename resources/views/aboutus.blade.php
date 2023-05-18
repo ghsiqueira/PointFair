@@ -65,62 +65,53 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="container-fluid">
-                <div class="row">
-                    @if(session('msg'))
-                    <p class="msg">{{ session('msg') }}</p>
-                    @endif
-                </div>
-                <section id="Team">
-                  <h1>Time de desenvolvimento do projeto!</h1>
-                  <div class="team">
-                    <div class="dev-person">
-                      <a href="" target="_blank">
-                        <img src="{{ asset('img\group\evilyn.jpg') }}" alt="Minha imagem">
-                        <p>Evilyn Ramos</p>
-                      </a>
-                    </div>
-                    <div class="dev-person">
-                      <a href="" target="_blank">
-                        <img src="{{ asset('img\group\felipe.jpg') }}" alt="Minha imagem">
-                        <p>Felipe Kenji</p>
-                      </a>
-                    </div>
-                    <div class="dev-person">
-                      <a href="" target="_blank">
-                        <img src="{{ asset('img\group\gabriel.jpeg') }}" alt="Minha imagem">
-                        <p>Gabriel Siqueira</p>
-                      </a>
-                    </div>
-                    <div class="dev-person">
-                      <a href="" target="_blank">
-                        <img src="{{ asset('img\group\pablo.jpg') }}" alt="Minha imagem">
-                        <p>Pablo Félix</p>
-                      </a>
-                    </div>
-                    <div class="dev-person">
-                      <a href="" target="_blank">
-                        <img src="{{ asset('img\group\pedro.jpg') }}" alt="Minha imagem">
-                        <p>Pedro Sanchez</p>
-                      </a>
-                    </div>
-                    <div class="dev-person">
-                      <a href="" target="_blank">
-                        <img src="{{ asset('img\group\thaiany.png') }}" alt="Minha imagem">
-                        <p>Thaiany Lopes</p>
-                      </a>
-                    </div>
-                    <div class="dev-person">
-                      <a href="" target="_blank">
-                        <img src="{{ asset('img\perfil.png') }}" alt="Minha imagem">
-                        <p>Vinicius Oliveira</p>
-                      </a>
-                    </div>
-                  </div>
-                </section>
+        <section id="Team">
+          <h1>Time de desenvolvimento do projeto!</h1>
+          <div class="team">
+            <div class="dev-person">
+              <a href="" target="_blank">
+                <img src="{{ asset('img\group\evilyn.jpg') }}" alt="Minha imagem">
+                <p>Evilyn Ramos</p>
+              </a>
             </div>
-        </main>
+            <div class="dev-person">
+              <a href="" target="_blank">
+                <img src="{{ asset('img\group\felipe.jpg') }}" alt="Minha imagem">
+                <p>Felipe Kenji</p>
+              </a>
+            </div>
+            <div class="dev-person">
+              <a href="" target="_blank">
+                <img src="{{ asset('img\group\gabriel.jpeg') }}" alt="Minha imagem">
+                <p>Gabriel Siqueira</p>
+              </a>
+            </div>
+            <div class="dev-person">
+              <a href="" target="_blank">
+                <img src="{{ asset('img\group\pablo.jpg') }}" alt="Minha imagem">
+                <p>Pablo Félix</p>
+              </a>
+            </div>
+            <div class="dev-person">
+              <a href="" target="_blank">
+                <img src="{{ asset('img\group\pedro.jpg') }}" alt="Minha imagem">
+                <p>Pedro Sanchez</p>
+              </a>
+            </div>
+            <div class="dev-person">
+              <a href="" target="_blank">
+                <img src="{{ asset('img\group\thaiany.png') }}" alt="Minha imagem">
+                <p>Thaiany Lopes</p>
+              </a>
+            </div>
+            <div class="dev-person">
+              <a href="" target="_blank">
+                <img src="{{ asset('img\perfil.png') }}" alt="Minha imagem">
+                <p>Vinicius Oliveira</p>
+              </a>
+            </div>
+          </div>
+        </section>
         <footer class="Rodape">
             <div class="container">
                 <div class="row">

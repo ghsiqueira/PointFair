@@ -61,15 +61,6 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="container-fluid">
-                <div class="row">
-                    @if(session('msg'))
-                    <p class="msg">{{ session('msg') }}</p>
-                    @endif
-                </div>
-            </div>
-        </main>
         <div class="feed-wrapper">
           <div class="feeds-container">
             <div class="user-feed">
