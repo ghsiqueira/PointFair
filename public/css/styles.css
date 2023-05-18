@@ -70,6 +70,16 @@ section{
     border-color: #F2A340;
 }
 
+header li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
 /* Estilo do container principal */
 .mainIndex {
     display: flex;
