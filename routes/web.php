@@ -18,7 +18,8 @@ Route::get('/', function () { return view('inicio'); })->name('inicio');
 Route::get('/sobrenos', function () { return view('aboutus'); })->name('aboutus');
 Route::get('/duvidasFrequentes', function () { return view('duvidasFrequentes'); })->name('duvidasFrequentes');
 Route::view('/contato', 'contact')->name('contato');
-Route::post('/contato/submit', [ContactController::class, 'submit'])->name('contato.submit');Route::middleware([
+Route::post('/contato/submit', [ContactController::class, 'submit'])->name('contato.submit');
+Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
