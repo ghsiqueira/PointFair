@@ -85,6 +85,7 @@
                 </div>
                 <button type="submit">Enviar</button>
             </form>
+            <br>
             @if (session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
