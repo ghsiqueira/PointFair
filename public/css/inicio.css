@@ -110,7 +110,7 @@ p {
 
 @media (max-width: 768px) {
     .mainIndex {
-    height: auto;
+        height: auto;
     }
     
     .ScreenMain {
@@ -138,6 +138,7 @@ p {
     
     .mainIndex div p {
         width: 100%;
+        text-align: center;
     }
     
     .ImgHome {

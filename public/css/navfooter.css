@@ -81,7 +81,7 @@
 }
 
 .list-unstyled li a {
-    color: var(--black);
+    color: var(--secundario);
     padding: 5px 0;
     margin-top: 10px;
 }
