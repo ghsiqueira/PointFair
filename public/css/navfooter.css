@@ -85,3 +85,44 @@
     padding: 5px 0;
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    #navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .nav-item a {
+        font-size: 1rem;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .imgHeader {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .Rodape {
+        padding: 10px 0;
+    }
+    
+    .container-rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .linha-vertical {
+        display: none;
+    }
+    
+    .col-md-4 {
+        padding-left: 0;
+    }
+}    

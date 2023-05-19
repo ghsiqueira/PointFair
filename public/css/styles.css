@@ -68,3 +68,9 @@ section{
     border: 2px solid orange;
     border-color: #F2A340;
 }
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 5%;
+    }
+}

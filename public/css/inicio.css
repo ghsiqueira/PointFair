@@ -107,3 +107,42 @@ p {
     width: 30vw;
     margin-left: 45vh;
 }
+
+@media (max-width: 768px) {
+    .mainIndex {
+    height: auto;
+    }
+    
+    .ScreenMain {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttons-login-cadastro {
+        margin-right: 0;
+        align-self: center;
+        margin-top: 20px;
+    }
+    
+    .TextInfo {
+        margin-top: 50px;
+    }
+    
+    .mainIndex div h1 {
+        font-size: 36px;
+    }
+    
+    .mainIndex div h2 {
+        font-size: 24px;
+    }
+    
+    .mainIndex div p {
+        width: 100%;
+    }
+    
+    .ImgHome {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+}    
