@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\EventController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () { return view('inicio'); })->name('inicio');
 Route::get('/sobrenos', function () { return view('aboutus'); })->name('aboutus');
 Route::get('/duvidasFrequentes', function () { return view('duvidasFrequentes'); })->name('duvidasFrequentes');
-Route::get('/contato', function () { return view('contact'); })->name('contact');
-Route::middleware([
+Route::view('/contato', 'contact')->name('contato');
+Route::post('/contato/submit', [ContactController::class, 'submit'])->name('contato.submit');Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
