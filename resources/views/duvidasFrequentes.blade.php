@@ -84,7 +84,7 @@
             </div>
           </section>
           <div class="link-form">
-            <p>Se sua dúvida não foi respondida <a href="/contact">clique aqui.</a></p>
+            <p>Se sua dúvida não foi respondida <a href="/contato">clique aqui.</a></p>
           </div>
         </main>
         <footer class="Rodape">
@@ -107,7 +107,7 @@
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
-                                    <li><a href="/contact"><i class="far fa-envelope"></i> Contato</a></li>
+                                    <li><a href="/contato"><i class="far fa-envelope"></i> Contato</a></li>
                                     <li><a href="/home"><i class="fas fa-home"></i> Página Inicial</a></li>
                                 </ul>
                             </div>

@@ -48,7 +48,7 @@
                             <a href="/sobrenos" class="nav-link">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">Contato</a>
+                            <a href="/contato" class="nav-link">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a href="/duvidasFrequentes" class="nav-link">Dúvidas Frequentes</a>
@@ -105,7 +105,7 @@
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
-                                    <li><a href="/contact"><i class="far fa-envelope"></i> Contato</a></li>
+                                    <li><a href="/contato"><i class="far fa-envelope"></i> Contato</a></li>
                                     <li><a href="/home"><i class="fas fa-home"></i> Página Inicial</a></li>
                                 </ul>
                             </div>
