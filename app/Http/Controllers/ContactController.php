@@ -4,22 +4,27 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
-class ContatoController extends Controller
+class ContactController extends Controller
 {
     public function submit(Request $request)
     {
-        $validatedData = $request->validate([
+        $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
         ]);
 
-        Mail::send('emails.contato', ['data' => $validatedData], function ($message) use ($validatedData) {
-            $message->to('gabrielh2805@gmail.com')
-                    ->subject('Nova mensagem de contato');
-        });
+        // Envie o email com as informações do formulário
+        $emailData = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message,
+        ];
 
-        return redirect()->back()->with('success', 'Obrigado! Sua mensagem foi enviada com sucesso.');
+        Mail::to('gabrielh2805@gmail.com')->send(new ContactMail($emailData));
+
+        return redirect()->back()->with('success', 'Mensagem enviada com sucesso!');
     }
 }
