@@ -84,7 +84,7 @@
             </div>
           </section>
           <div class="link-form">
-            <p>Se sua dúvida não foi respondida <a href="/contato">clique aqui.</a></p>
+            <p>Se sua dúvida não foi respondida <a href="/contact">clique aqui.</a></p>
           </div>
         </main>
         <footer class="Rodape">

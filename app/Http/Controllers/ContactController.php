@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactMail;
+use Illuminate\Http\Request;
+use App\Mail\ContactFormMail;
 
 class ContactController extends Controller
 {
@@ -23,7 +23,7 @@ class ContactController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('gabrielh2805@gmail.com')->send(new ContactMail($emailData));
+        Mail::to('gabrielh2805@gmail.com')->send(new ContactFormMail($emailData));
 
         return redirect()->back()->with('success', 'Mensagem enviada com sucesso!');
     }
