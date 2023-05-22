@@ -101,14 +101,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
-                                    <li><a href="/sobrenos"><i class="fas fa-users"></i> Sobre nós</a></li>
+                                    <li><a href="/home"><i class="fas fa-home"></i> Página Inicial</a></li>
                                     <li><a href="/duvidasFrequentes"><i class="far fa-question-circle"></i> Dúvidas Frequentes</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
                                     <li><a href="/contato"><i class="far fa-envelope"></i> Contato</a></li>
-                                    <li><a href="/home"><i class="fas fa-home"></i> Página Inicial</a></li>
+                                    <li><a href="/sobrenos"><i class="fas fa-users"></i> Sobre nós</a></li>
                                 </ul>
                             </div>
                         </div>
