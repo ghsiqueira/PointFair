@@ -16,7 +16,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('inicio', [
+    return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -33,9 +33,3 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
-
-// Route::get('/', function () { return view('inicio'); })->name('inicio');
-Route::get('/sobrenos', function () { return view('aboutus'); })->name('aboutus');
-Route::get('/duvidasFrequentes', function () { return view('duvidasFrequentes'); })->name('duvidasFrequentes');
-Route::view('/contato', 'contact')->name('contato');
-Route::post('/contato', [ContactController::class, 'submit'])->name('contato.submit');
