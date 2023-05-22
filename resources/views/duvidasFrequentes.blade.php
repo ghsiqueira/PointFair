@@ -48,7 +48,7 @@
                             <a href="/sobrenos" class="nav-link">Sobre Nós</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/contact" class="nav-link">Contato</a>
+                            <a href="/contato" class="nav-link">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a href="/duvidasFrequentes" class="nav-link">Dúvidas Frequentes</a>
@@ -107,8 +107,8 @@
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
-                                    <li><a href="/contato"><i class="far fa-envelope"></i> Contato</a></li>
                                     <li><a href="/sobrenos"><i class="fas fa-users"></i> Sobre nós</a></li>
+                                    <li><a href="/contato"><i class="far fa-envelope"></i> Contato</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
             </div>
         </footer>
         <script type="text/javascript">
-            var marker = document.querySelector('#marker');
+            var marker = document.querySelector('nav #marker');
             var item = document.querySelectorAll('nav a');
 
             function indicator(e){

@@ -132,8 +132,8 @@
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-unstyled">
-                                    <li><a href="/contato"><i class="far fa-envelope"></i> Contato</a></li>
                                     <li><a href="/sobrenos"><i class="fas fa-users"></i> Sobre nós</a></li>
+                                    <li><a href="/contato"><i class="far fa-envelope"></i> Contato</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
             </div>
         </footer>
         <script type="text/javascript">
-            var marker = document.querySelector('#marker');
+            var marker = document.querySelector('nav #marker');
             var item = document.querySelectorAll('nav a');
 
             function indicator(e){
