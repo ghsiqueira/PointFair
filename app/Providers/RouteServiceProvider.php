@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
@@ -32,7 +33,11 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/api.php'));
 
             Route::middleware('web')
-                ->group(base_path('routes/web.php'));
+            ->group(function () {
+                Route::post('/login', [LoginController::class, 'login'])->name('login');
+                Route::get('/confirm-email/{token}', [LoginController::class, 'confirmEmail'])->name('confirm.email');
+                require base_path('routes/web.php');
+            });
         });
     }
 

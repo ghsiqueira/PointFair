@@ -28,3 +28,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::post('/login', 'App\Http\Controllers\LoginController@login')->name('login');
+Route::get('/confirm-email/{token}', 'App\Http\Controllers\LoginController@confirmEmail')->name('confirm.email');
