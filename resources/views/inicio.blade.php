@@ -21,7 +21,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light marker">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <div class="navbar-header d-flex justify-content-center">
                         <a href="/">
@@ -119,21 +119,6 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript">
-            var marker = document.querySelector('nav #marker');
-            var item = document.querySelectorAll('nav a');
-
-            function indicator(e){
-                marker.style.left = e.offsetLeft+"px"+;
-                marker.style.width = e.offsetWidth+"px"+;
-            }
-
-            item.forEach(Link => {
-                Link.addEventListener('click', (e)=> {
-                    indicator(e.target);
-                })
-            })
-        </script>
         <script src="js/scripts.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
