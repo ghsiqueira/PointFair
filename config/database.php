@@ -101,7 +101,7 @@ return [
             'username' => env('MONGODB_USERNAME'),
             'password' => env('MONGODB_PASSWORD'),
             'options' => [
-                'database' => 'test'
+                'database' => 'admin'
             ],
         ],        
 
