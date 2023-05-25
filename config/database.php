@@ -95,14 +95,15 @@ return [
 
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('DB_CONNECTION_STRING', 'mongodb+srv://web:web123@pointfair.dozoyx1.mongodb.net'),
-            'database' => env('DB_DATABASE', 'test'),
+            'host' => env('MONGODB_HOST', 'localhost'),
+            'port' => env('MONGODB_PORT', 27017),
+            'database' => env('MONGODB_DATABASE'),
+            'username' => env('MONGODB_USERNAME'),
+            'password' => env('MONGODB_PASSWORD'),
             'options' => [
-                'retryWrites' => true,
-                'w' => 'majority',
+                'database' => 'test'
             ],
-        ],
-        
+        ],        
 
     ],
 
