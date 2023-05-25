@@ -93,6 +93,17 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_CONNECTION_STRING', 'mongodb+srv://web:web123@pointfair.dozoyx1.mongodb.net'),
+            'database' => env('DB_DATABASE', 'test'),
+            'options' => [
+                'retryWrites' => true,
+                'w' => 'majority',
+            ],
+        ],
+        
+
     ],
 
     /*
