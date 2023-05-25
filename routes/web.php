@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Foundation\Application;
+use App\Models\Publication;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
+use App\Http\Controllers\FeedController;
+use Illuminate\Foundation\Application;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,15 +15,6 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return Inertia::render('Welcome', [
-//         'canLogin' => Route::has('login'),
-//         'canRegister' => Route::has('register'),
-//         'laravelVersion' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
 
 Route::middleware([
     'auth:sanctum',
@@ -39,3 +31,8 @@ Route::get('/sobrenos', function () { return view('aboutus'); })->name('aboutus'
 Route::get('/duvidasFrequentes', function () { return view('duvidasFrequentes'); })->name('duvidasFrequentes');
 Route::view('/contato', 'contact')->name('contato');
 Route::post('/contato', [ContactController::class, 'submit'])->name('contato.submit');
+
+Route::get('/feed', function () {
+    $publications = Publication::orderBy('created_at', 'desc')->paginate(10);
+    return view('feed', ['publications' => $publications]);
+});
